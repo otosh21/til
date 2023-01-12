@@ -3,7 +3,14 @@
 Long long = 1L;  
 BigDecimal res = BigDecimal.valueof(long);  
 ```
-
+  
+### BigDecimalから変換
+```  
+BigDecimal res = BigDecimal.valueof(100);
+int val1 = res.intValue();
+Long val2 = res.longValue();
+```  
+  
 ### 四則演算  
 ```
 BigDecimal val1 = new BigDecimal("3.14");  
