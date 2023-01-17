@@ -9,3 +9,17 @@ List<String> list = new ArrayList<String>(){
   }  
 };  
 ```  
+  
+## 要素の削除  
+```  
+List<String> list = new ArrayList<String>(){  
+  {  
+    add("red");  
+    add("white");  
+    add("blue");  
+  }  
+};  
+  
+// red以外が削除  
+list.removeIf(str -> str.length > 3);  
+```  
